@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Vitalijus",
+  "author": "Vitalijus (https://github.com/vitgri1)",
   "license": "ISC",
   "devDependencies": {
     "dead-server": "^1.0.9"
