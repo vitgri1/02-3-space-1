@@ -1,15 +1,51 @@
-header {
-    background-color: yellow;
-    width: 800px;
-    margin-left: calc(50% - 40px);
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-main {
-    background-color: green;
+
+header,
+main,
+footer{
+    background-color: pink;
     width: 800px;
-    margin-left: calc(50% - 40px);
+    margin-left: calc(50% - 400px);
+    margin-bottom: 30px;
+    display: inline-block;
 }
-footer {
-    background-color: red;
-    width: 800px;
-    margin-left: calc(50% - 40px);
+
+header{
+    margin-top: 40px;
+
+}
+
+img{
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+    object-position: left;
+    float: left;
+}
+
+nav{
+    margin-top: 10px;
+    float: right;
+}
+
+a{
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    line-height: 1em;
+    text-decoration: none;
+    margin: 0;
+    margin-left: 2em;
+}
+
+a:first-child{
+    margin-left: 0;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: underline;
 }
