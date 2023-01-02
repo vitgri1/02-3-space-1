@@ -15,10 +15,9 @@ footer{
 
 header{
     margin-top: 40px;
-
 }
 
-img{
+header > img{
     width: 100px;
     height: 40px;
     object-fit: contain;
@@ -31,7 +30,7 @@ nav{
     float: right;
 }
 
-a{
+nav > a{
     display: inline-block;
     color: #000;
     font-size: 20px;
@@ -41,11 +40,40 @@ a{
     margin-left: 2em;
 }
 
-a:first-child{
+nav > a:first-child{
     margin-left: 0;
 }
 
-a:hover{
+nav > a:hover{
     color: blueviolet;
     text-decoration: underline;
+}
+main{
+
+}
+div{
+    float: left;
+    width: 40%;
+}
+h1{
+    font-size: 50px;
+    color: #222222;
+    font-weight: normal;
+}
+h1 > span{
+    font-weight: bold;
+    display: block;
+}
+p{
+    font-size: 20px;
+}
+div > a{
+    background-color: red
+}
+div > a:last-child{
+    background-color: aqua;
+}
+main > img{
+    float: right;
+    width: 55%;
 }
