@@ -68,10 +68,25 @@ p{
     font-size: 20px;
 }
 div > a{
-    background-color: red
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: purple;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1em;
+    padding: 1em 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 2.05em;
+    border: 0.05em solid purple;
 }
 div > a:last-child{
-    background-color: aqua;
+    color: purple;
+    background-color: #fff;
+}
+div > a:hover{
+    box-shadow: 1px 2px 4px 1px #00000088;
 }
 main > img{
     float: right;
