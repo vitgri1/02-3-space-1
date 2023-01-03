@@ -13,6 +13,8 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
+Site published at: https:// vitgri1.github.io/02-3-space-1/
+
 Design: [Astronautas](https://cdn.dribbble.com/users/1355613/screenshots/5964475/space.gif)
 
 ## 🎯 Project features/goals
