@@ -6,7 +6,6 @@ body{
 header,
 main,
 footer{
-    background-color: pink;
     width: 800px;
     margin-left: calc(50% - 400px);
     margin-bottom: 30px;
