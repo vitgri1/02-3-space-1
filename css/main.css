@@ -63,6 +63,13 @@ h1 > span{
     font-weight: bold;
     display: block;
 }
+.main-title::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background-color: purple;
+}
 
 div > p{
     font-size: 20px;
