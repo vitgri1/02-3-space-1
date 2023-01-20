@@ -1,19 +1,27 @@
+body,
+body * {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
 body{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header,
-main,
-footer{
+.container{
     width: 800px;
     margin-left: calc(50% - 400px);
     margin-bottom: 30px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header{
-    margin-top: 40px;
+header.container{
+    margin-top: calc(50vh - 300px);
+    user-select: none;
 }
 
 header > img{
@@ -21,12 +29,11 @@ header > img{
     height: 40px;
     object-fit: contain;
     object-position: left;
-    float: left;
 }
 
-nav{
-    margin-top: 10px;
-    float: right;
+nav {
+    display: flex;
+    gap: 2.5em;
 }
 
 nav > a{
@@ -35,8 +42,6 @@ nav > a{
     font-size: 20px;
     line-height: 1em;
     text-decoration: none;
-    margin: 0;
-    margin-left: 2em;
 }
 
 nav > a:first-child{
@@ -49,12 +54,16 @@ nav > a:hover{
 }
 
 main > div{
-    float: left;
-    width: 40%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 2.8em;
+    line-height: 1em;
     color: #222222;
     font-weight: normal;
 }
@@ -67,60 +76,79 @@ h1 > span{
     content: '';
     display: block;
     width: 100px;
-    height: 6px;
+    height: 3px;
     background-color: purple;
+    margin-top: 0.4em;
 }
 
 div > p{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
-main > div > a{
+main > div > div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+main > div > div > a{
     float: left;
     text-transform: uppercase;
     text-decoration: none;
     background-color: purple;
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1em;
     padding: 1em 2em;
-    margin-right: 1em;
-    margin-bottom: 1em;
     border-radius: 2.05em;
     border: 0.05em solid purple;
+    user-select: none;
 }
 
-main > div > a:last-child{
+main > div > div > a:last-child{
     color: purple;
     background-color: #fff;
 }
 
-main > div > a:hover{
+main > div > div > a:hover{
     box-shadow: 1px 2px 4px 1px #00000088;
 }
 
 main > img{
-    float: right;
-    width: 55%;
+    width: 65%;
+    user-select: none;
 }
 
 footer > div{
-    float: left;
+    user-select: none;
+    display: flex;
+    gap: 1em;
 }
 
 footer > div >a{
-    margin-right: 1em;
+
     font-size: 20px;
     line-height: 1em;
     text-decoration: none;
     color: #999;
 }
 
-footer > div >a:last-child{
-    margin-right: 0;
+@media (max-width: 800px) {
+    .container{
+        width: 600px;
+        margin-left: calc(50% - 300px);
+        font-size: 12px;
+    }
 }
 
-footer > p{
-    float: right;
-    margin: 0;
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+        margin-left: 0;
+        font-size: 10px;
+    }
+    main > div,
+    main > img{
+        width: 50%;
+    }
 }
